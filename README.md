@@ -1,4 +1,4 @@
-# CS4CS - Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats
+# CS4CS - Evaluating ML Performance in EDR and XDR Systems Against Common Cyber Threats
 
 This repository contains a comprehensive cybersecurity analysis project focused on evaluating machine learning performance in EDR (Endpoint Detection and Response) and XDR (Extended Detection and Response) systems against common cyber threats.
 
@@ -33,7 +33,6 @@ cd CS4CS
 
 2. **Install dependencies:**
 ```bash
-cd project
 pip install -r requirements.txt
 ```
 
@@ -51,7 +50,6 @@ The project expects LANL dataset files in a `lanl/` directory:
 
 1. **Build the initial datasets:**
 ```bash
-cd project
 python lanl.py
 ```
 This creates the raw master datasets with EDR and XDR features.
