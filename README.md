@@ -1,4 +1,4 @@
-# CS4CS - Computer Science Security Project
+# CS4CS - Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats
 
 This repository contains a comprehensive cybersecurity analysis project focused on evaluating machine learning performance in EDR (Endpoint Detection and Response) and XDR (Extended Detection and Response) systems against common cyber threats.
 
