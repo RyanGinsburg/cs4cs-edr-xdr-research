@@ -17,21 +17,7 @@ The main project analyzes the effectiveness of various machine learning models i
 - **`results.html`** - Generated HTML report with analysis results
 - **`styles.css`** - Styling for the HTML report
 
-### Classwork Directory
-Contains various educational exercises and assignments:
-
-#### Reverse Engineering
-- **`hello_world.c`** - Basic C program
-- **`crackme.c`** - Password cracking challenge
-- **`crackme.py`** - Python pattern printing exercises
-- **`ReverseEngineering_Worksheet.txt`** - Educational worksheet
-
-#### Other Exercises
-- **`calculate.py`** - Mathematical calculations
-- **`sherlock.py`** - Text analysis exercise
-- **`test_2.txt`** - Linux CLI practice file
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -47,6 +33,7 @@ cd CS4CS
 
 2. **Install dependencies:**
 ```bash
+cd project
 pip install -r requirements.txt
 ```
 
@@ -112,76 +99,6 @@ Raw LANL Data → lanl.py → Master Datasets
                eval.py → ML Analysis & Results
 ```
 
-## 🔍 Analysis Features
-
-### Dataset Construction
-- **Time-windowed features** (5-minute windows by default)
-- **EDR features** from host logs (authentication, processes)
-- **XDR features** combining EDR with network context (flows, DNS)
-- **Contextual sampling** around malicious events (75-150 negative samples per side)
-- **Temporal train/test splits** avoiding data leakage
-
-### Machine Learning Models
-- LightGBM Classifier
-- Balanced Random Forest
-- SGD Classifier  
-- Isolation Forest (anomaly detection)
-
-### Evaluation Metrics
-- Precision, Recall, F1-Score
-- ROC-AUC, PR-AUC
-- Confusion matrices
-- Feature importance analysis
-
-## 📊 Key Findings
-
-The analysis reveals significant class imbalance challenges in cybersecurity datasets, with malicious samples representing less than 1% of the data. The project demonstrates various techniques for handling this imbalance and evaluating model performance in realistic security scenarios.
-
-## 📁 Output Structure
-
-```
-project/
-├── lanl_output/
-│   ├── edr_master.csv                    # Initial EDR dataset
-│   ├── xdr_master.csv                    # Initial XDR dataset
-│   ├── edr_master_sorted_filtered.csv    # Sorted EDR dataset
-│   ├── xdr_master_sorted_filtered.csv    # Sorted XDR dataset
-│   ├── adjusted_master_edr.csv           # Balanced EDR dataset
-│   ├── adjusted_master_xdr.csv           # Balanced XDR dataset
-│   ├── edr_train_all.csv                 # EDR training data
-│   ├── edr_test_all.csv                  # EDR test data
-│   ├── xdr_train_all.csv                 # XDR training data
-│   └── xdr_test_all.csv                  # XDR test data
-├── results.html                          # Analysis report
-└── styles.css                            # Report styling
-```
-
-## 📄 Documentation
-
-For detailed methodology and findings, refer to:
-- `Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats.pdf`
-- Generated `results.html` report
-
-## 🎓 Educational Components
-
-The `classwork/` directory contains various cybersecurity and programming exercises suitable for learning:
-- Reverse engineering fundamentals
-- Binary analysis techniques
-- Python programming exercises
-- Linux command line practice
-
-## 🔧 Dependencies
-
-Key dependencies include:
-- **pandas** (2.3.1) - Data manipulation and analysis
-- **numpy** (2.3.1) - Numerical computing
-- **scikit-learn** (1.7.1) - Machine learning library
-- **matplotlib** (3.10.3) - Data visualization
-- **seaborn** (0.13.2) - Statistical data visualization
-- **kagglehub** (0.3.12) - Dataset downloading
-
-See `requirements.txt` for complete dependency list.
-
 ## ⚙️ Configuration
 
 The pipeline can be customized by modifying parameters in each script:
@@ -190,17 +107,6 @@ The pipeline can be customized by modifying parameters in each script:
 - **`split.py`**: Train/test split ratios and temporal boundaries
 - **`eval.py`**: ML model parameters and evaluation metrics
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is for educational and research purposes. Please ensure appropriate data use agreements when working with the LANL dataset.
 
 ## ⚠️ Important Notes
 
@@ -209,22 +115,3 @@ This project is for educational and research purposes. Please ensure appropriate
 - The LANL dataset should be used responsibly and in accordance with data use agreements
 - Results are based on simulated data and may not reflect real-world attack patterns
 - Always follow ethical guidelines when conducting cybersecurity research
-
-## 🐛 Troubleshooting
-
-**Common Issues:**
-- **File not found errors**: Ensure you run scripts in the correct order
-- **Memory issues**: The LANL dataset is large; ensure sufficient RAM
-- **Missing dependencies**: Run `pip install -r requirements.txt`
-
-## 📞 Support
-
-If you encounter any issues or have questions about the project, please:
-1. Check that you've run all pipeline steps in order
-2. Review the documentation in the PDF file
-3. Check the generated `results.html` report
-4. Open an issue on GitHub with detailed information about your problem
-
----
-
-**Note:** This project is part of a Computer Science Security course and is intended for
