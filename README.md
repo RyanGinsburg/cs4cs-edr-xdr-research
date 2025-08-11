@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive cybersecurity analysis project focused on evaluating machine learning performance in EDR (Endpoint Detection and Response) and XDR (Extended Detection and Response) systems against common cyber threats.
 
+> 📄 **For detailed methodology, analysis, and findings, see the complete research paper:** [Evaluating ML Performance in EDR and XDR Systems Against Common Cyber Threats](./Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats.pdf)
+
 ## 📋 Project Overview
 
 The main project analyzes the effectiveness of various machine learning models in detecting cyber threats using the LANL (Los Alamos National Laboratory) Comprehensive, Multi-Source Cyber-Security Events dataset. The analysis builds richer EDR and XDR datasets and evaluates multiple ML algorithms for threat detection.
