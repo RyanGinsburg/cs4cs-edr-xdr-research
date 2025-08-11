@@ -1,0 +1,37 @@
+
+Reverse Engineering Activity Worksheet
+
+Name: ___________________     Date: ___________
+
+Activity 1: What Does Binary Look Like?
+----------------------------------------
+1. What did the hello program print when you ran it?
+   Answer: ________________________________________
+
+2. What happened when you opened the binary with `cat hello`?
+   Answer: ________________________________________
+
+3. Why can’t we read binary files in a regular text editor?
+   Answer: ________________________________________
+
+4. What did you notice when using `xxd hello | less`?
+
+Activity 2: Disassembly with objdump
+------------------------------------
+5. What command did you use to disassemble the hello binary?
+   Command: ________________________________________
+
+6. What is `printf` doing in the assembly?
+
+7. Why do we need a disassembler like objdump or IDA?
+
+Activity 3: CrackMe Challenge
+------------------------------
+8. What does the crackme program ask you to do?
+
+9. What did you discover using the `strings` command?
+
+10. What was the correct password?
+
+11. Why is reverse engineering useful in cybersecurity?
+
