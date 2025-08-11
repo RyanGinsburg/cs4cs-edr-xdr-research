@@ -46,7 +46,8 @@ cd CS4CS
 ```
 
 2. **Install dependencies:**
-```bash
+```bash\
+cd project
 pip install -r requirements.txt
 ```
 
