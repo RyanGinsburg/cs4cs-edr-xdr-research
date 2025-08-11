@@ -65,7 +65,6 @@ The project expects LANL dataset files in a `lanl/` directory:
 
 1. **Build the initial datasets:**
 ```bash
-cd project
 python lanl.py
 ```
 This creates the raw master datasets with EDR and XDR features.
