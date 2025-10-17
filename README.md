@@ -2,13 +2,13 @@
 
 This repository contains a comprehensive cybersecurity analysis project focused on evaluating machine learning performance in EDR (Endpoint Detection and Response) and XDR (Extended Detection and Response) systems against common cyber threats.
 
-> 📄 **For detailed methodology, analysis, and findings, see the complete research paper:** [Evaluating ML Performance in EDR and XDR Systems Against Common Cyber Threats](./Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats.pdf)
+>  **For detailed methodology, analysis, and findings, see the complete research paper:** [Evaluating ML Performance in EDR and XDR Systems Against Common Cyber Threats](./Evaluating_ML_Performance_in_EDR_and_XDR_Systems_Against_Common_Cyber_Threats.pdf)
 
-## 📋 Project Overview
+##  Project Overview
 
 The main project analyzes the effectiveness of various machine learning models in detecting cyber threats using the LANL (Los Alamos National Laboratory) Comprehensive, Multi-Source Cyber-Security Events dataset. The analysis builds richer EDR and XDR datasets and evaluates multiple ML algorithms for threat detection.
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ### Main Analysis Files
 - **`lanl.py`** - Core dataset builder that processes LANL data to create EDR and XDR feature sets
@@ -83,7 +83,7 @@ This generates `results.html` with comprehensive analysis results.
 6. **View results:**
 Open `results.html` in your web browser to see the complete analysis report.
 
-## 🔄 Pipeline Overview
+##  Pipeline Overview
 
 The analysis pipeline follows this data flow:
 
@@ -99,7 +99,7 @@ Raw LANL Data → lanl.py → Master Datasets
                eval.py → ML Analysis & Results
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 The pipeline can be customized by modifying parameters in each script:
 
@@ -108,7 +108,7 @@ The pipeline can be customized by modifying parameters in each script:
 - **`eval.py`**: ML model parameters and evaluation metrics
 
 
-## ⚠️ Important Notes
+##  Important Notes
 
 - **Run scripts in order**: The pipeline must be executed sequentially as each script depends on outputs from the previous step
 - This project contains simulated cyber attack scenarios for educational purposes
